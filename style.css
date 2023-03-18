@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #3d9578;
+  font-family: "Caveat", cursive;
+  font-family: "Rubik", sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.box input {
+  padding: 0.3rem;
+}
+
+.box input[readonly="true"],
+.box {
+  border: 1px solid #000;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+
+  align-items: center;
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.5rem;
+  margin-top: 2rem;
+}
+
+ion-icon {
+  color: #000;
+}
+
+button {
+  width: 100%;
+  background-color: #36866d;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 2rem;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #046345;
+}
+
+#edit,
+#delete {
+  cursor: pointer;
+  transition: all 0.3s;
+  color: gray;
+  margin-right: 0.2rem;
+}
+
+#edit:hover {
+  color: #36866d;
+}
+
+#delete:hover {
+  color: red;
+}
+
+@media (max-width: 770px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    gap: 6rem;
+  }
+}
